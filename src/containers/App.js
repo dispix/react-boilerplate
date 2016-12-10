@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 
 import { test } from '../actions'
 
+import './style.scss'
+
 class App extends React.Component {
   componentDidMount () {
     this.props.test()
