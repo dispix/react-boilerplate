@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 
 import { test } from '../actions'
 
+import H1 from '../components/h1/H1'
+
 import './style.scss'
 
 class App extends React.Component {
@@ -13,7 +15,7 @@ class App extends React.Component {
   render () {
     return (
       <div className='main'>
-        <h1>Hello World</h1>
+        <H1>Hello World</H1>
         <p>Redux test is {this.props.isTestOk ? 'passing' : 'not passing'}</p>
       </div>
     )

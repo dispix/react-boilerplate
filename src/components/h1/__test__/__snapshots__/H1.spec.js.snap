@@ -1,0 +1,5 @@
+exports[`test App component snapshot 1`] = `
+<h1>
+  Test
+</h1>
+`;
