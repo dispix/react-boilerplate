@@ -3,17 +3,16 @@
 const path = require('path')
 
 module.exports = {
-  context: path.join(__dirname),
   entry: {
-    app: path.join(__dirname, '../src/index.js')
+    app: path.resolve(__dirname, '../src/index.js')
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.join(__dirname, '../build/assets'),
+    path: path.resolve(__dirname, '../build/assets'),
     publicPath: '/assets'
   },
   devServer: {
-    contentBase: path.join(__dirname, '../build')
+    contentBase: path.resolve(__dirname, '../build')
   },
   devtool: 'cheap-module-eval-source-map',
   module: {
